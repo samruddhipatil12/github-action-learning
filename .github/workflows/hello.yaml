@@ -7,7 +7,9 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latesthe
+    container:
+      image: alpine:latest
 
     steps:
       - name: print chalo
