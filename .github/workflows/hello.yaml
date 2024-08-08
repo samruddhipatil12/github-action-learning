@@ -6,12 +6,11 @@ on:
       -  main
 
 jobs:
-  helloworld:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: print chalo
-        run: echo "chalo world !!"
+        run: cat /etc/os-release
 
-      - name: print hello
-        run: echo "hello world !!"
+      
