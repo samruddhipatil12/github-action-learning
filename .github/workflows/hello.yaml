@@ -29,7 +29,7 @@ jobs:
   print-env:
      runs-on: ubuntu-latest
      container:
-       image: apline:latest
+       image: alpine:latest
      steps:
        - name: print env
          run: echo JDK_VERSION
