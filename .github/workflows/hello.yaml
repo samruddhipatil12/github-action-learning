@@ -19,5 +19,20 @@ jobs:
     steps:
       - name: install java
         run: apk add --no-cache openjdk11-jdk
-      - name: print java -version
-        run: java --version
+             print java -version
+             java --version
+             echo "MAVEN_VERSION =1234" >> $GITHUB-ENV
+
+      - name: print maven version
+        run: echo MAVEN_VERSION
+ 
+  print-env:
+     runs-on: ubuntu-latest
+     container:
+       image: apline:latest
+     steps:
+       - name: print env
+         run: echo JDK_VERSION
+    
+
+  
