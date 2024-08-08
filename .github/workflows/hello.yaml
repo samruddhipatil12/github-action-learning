@@ -6,12 +6,12 @@ on:
       -  master
 
 jobs:
-  build:
+  helloworld:
     runs-on: ubuntu-latest
 
     steps:
       - name: print chalo
         run: echo "chalo world !!"
 
-      - name: print chalo
-        run: echo "chalo world !!"
+      - name: print hello
+        run: echo "hello world !!"
