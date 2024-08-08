@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latesthe
+    runs-on: ubuntu-latest
     container:
       image: alpine:latest
 
